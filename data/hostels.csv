@@ -1,0 +1,7 @@
+hostel_id,name,gender,single_rooms,double_rooms,triple_rooms,total_beds,ac,distance_km,mess_rating,wifi_rating,annual_fee_inr,floors
+H1,Saraswati Boys Hostel,M,20,40,10,130,0,0.3,3.8,4.0,45000,4
+H2,Chanakya Boys Hostel,M,10,60,20,190,1,0.6,4.2,4.5,75000,5
+H3,Viveka Boys Hostel,M,5,30,30,155,0,1.2,3.5,3.8,38000,3
+H4,Lakshmi Girls Hostel,F,15,50,15,160,0,0.4,4.0,4.2,48000,4
+H5,Ambika Girls Hostel,F,10,40,20,150,1,0.8,4.5,4.8,82000,6
+H6,Sarojini Girls Hostel,F,8,35,25,153,0,1.5,3.6,3.5,36000,3
