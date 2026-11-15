@@ -1,0 +1,7 @@
+hostel_id,hostel_name,predicted_applications,total_beds,pred_occupancy_rate,status
+H1,Saraswati Boys Hostel,151,130,1.16,OVERSUBSCRIBED
+H2,Chanakya Boys Hostel,221,240,0.919,BALANCED
+H3,Viveka Boys Hostel,147,155,0.949,BALANCED
+H4,Lakshmi Girls Hostel,208,160,1.298,OVERSUBSCRIBED
+H5,Ambika Girls Hostel,138,150,0.923,BALANCED
+H6,Sarojini Girls Hostel,167,153,1.092,BALANCED

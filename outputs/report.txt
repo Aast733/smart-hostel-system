@@ -1,0 +1,62 @@
+======================================================================
+  SMART HOSTEL SYSTEM - EVALUATION REPORT
+======================================================================
+
+PART A: PREDICTION
+  - Demand model trained on 2010-2023; tested on 2024-2025.
+  - Best model selected by TimeSeriesSplit CV (no test leakage).
+  - Metrics saved to outputs/demand_model_metrics.csv
+
+  - Preference model trained on 3000 historical survey records.
+  - 80/20 train-test split with 5-fold CV.
+  - Metrics saved to outputs/preference_model_metrics.csv
+
+PART B: ALLOCATION COMPARISON
+  (All scores use the TRUE hidden satisfaction; NOT model predictions)
+
+  Method: Random
+    Allocation rate:    67.0%
+    Mean satisfaction:  5.602
+    Happy (>=7):        9.7%
+    Gini (lower=fairer):0.0966
+    First-choice match: 34.97%
+    Constraint violations: 0
+
+  Method: Greedy
+    Allocation rate:    67.0%
+    Mean satisfaction:  6.051
+    Happy (>=7):        21.22%
+    Gini (lower=fairer):0.1019
+    First-choice match: 55.65%
+    Constraint violations: 0
+
+  Method: Hungarian
+    Allocation rate:    67.0%
+    Mean satisfaction:  6.19
+    Happy (>=7):        26.55%
+    Gini (lower=fairer):0.0911
+    First-choice match: 63.86%
+    Constraint violations: 0
+
+  Method: Oracle
+    Allocation rate:    67.0%
+    Mean satisfaction:  6.224
+    Happy (>=7):        26.76%
+    Gini (lower=fairer):0.0896
+    First-choice match: 64.39%
+    Constraint violations: 0
+
+CONCLUSION: Oracle achieves the highest mean true satisfaction (6.224) with 0 constraint violations.
+
+LIMITATIONS:
+  - All data is synthetic (generated from a known formula).
+  - The preference model is trained on noisy observations; real surveys
+    would yield better predictions.
+  - Room-level assignment within a hostel is simplified (single bed per slot).
+
+FUTURE SCOPE:
+  - Integrate real application data via an institutional portal.
+  - Add dynamic reallocation when a student cancels.
+  - Use multi-objective optimisation (satisfaction + fairness Pareto front).
+  - Include semester-2 rollover (priority for staying students).
+======================================================================

@@ -1,0 +1,4 @@
+model,MAE,RMSE,R2,MAPE_%,CV_MAE
+HistGradientBoosting,0.622,0.775,0.6087,11.56,0.6831
+Random Forest,0.631,0.78,0.604,11.72,0.6873
+Ridge Regression,0.637,0.8,0.5834,12.01,0.6855

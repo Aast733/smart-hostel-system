@@ -1,0 +1,5 @@
+method,n_applicants,n_housed,n_waitlisted,allocation_rate_%,mean_satisfaction,median_satisfaction,p10_satisfaction,happy_%,gini,priority_coverage_%,first_choice_match_%,roommate_mismatch_%,constraint_violations,occ_H1_%,occ_H2_%,occ_H3_%,occ_H4_%,occ_H5_%,occ_H6_%
+Random,1400,938,462,67.0,5.602,5.627,4.328,9.7,0.0966,65.48,34.97,17.33,0,100.0,100.0,100.0,100.0,100.0,100.0
+Greedy,1400,938,462,67.0,6.051,6.031,4.457,21.22,0.1019,77.92,55.65,17.07,0,100.0,100.0,100.0,100.0,100.0,100.0
+Hungarian,1400,938,462,67.0,6.19,6.022,4.835,26.55,0.0911,89.18,63.86,11.73,0,100.0,100.0,100.0,100.0,100.0,100.0
+Oracle,1400,938,462,67.0,6.224,6.064,4.925,26.76,0.0896,88.42,64.39,8.8,0,100.0,100.0,100.0,100.0,100.0,100.0

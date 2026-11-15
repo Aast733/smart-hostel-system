@@ -1,0 +1,5 @@
+model,MAE,RMSE,R2,MAPE_%,CV_MAE
+Gradient Boosting,22.93,28.7,0.5107,13.89,17.04
+Random Forest,23.37,28.63,0.5133,13.45,16.68
+Ridge Regression,32.89,40.11,0.0444,17.91,20.22
+Naive Baseline,57.14,70.14,-1.9221,30.28,28.27
